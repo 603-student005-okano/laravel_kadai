@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>会員登録</h1>
+<h1>会員名編集</h1>
+
 @include('commons.flash')
 <form action="{{ route('update'), $user->name }}" method="post">
     @csrf
@@ -14,4 +15,6 @@
         <button type="submit">更新する</button>
     </p>
 </form>
+
+<a href="{{ route('home') }}">キャンセル</a>
 @endsection
