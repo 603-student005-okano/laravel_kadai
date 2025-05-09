@@ -8,19 +8,37 @@ body {
     margin: 0;
     padding: 0;
     font-size: 1rem;
+    color: #242036;
+    background-color: #ededed;
 }
 a:link {
+    color: #030777;
+    text-decoration: none;
+}
+a:visited {
+    color: #aa05af;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #f6ffa0;
     text-decoration: none;
 }
 input[type=text],
 input[type=email],
-input[type=password],
+input[type=password] {
+    width: 360px;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #fcfcfc;
+    border: 1px solid #cacaca;
+}
 textarea {
     resize: none;
     width: 360px;
     height: 100px;
     padding: 8px;
     border-radius: 4px;
+    background-color: #fcfcfc;
     border: 1px solid #cacaca;
 }
 .container {
@@ -75,4 +93,23 @@ dd {
 svg.w-5.h-5 {
     width: 25px;
     vertical-align: middle;
+}
+
+.myName{
+    color: #070022;
+    font-size: 0.95rem;
+    font-weight: 800;
+}
+.othersName{
+    color: #504875;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+#timestamp{
+    color: #747379;
+    font-size: 0.9rem;
+    font-weight: lighter;
+}
+#msgContent{
+    font-size: 1.05rem;
 }
